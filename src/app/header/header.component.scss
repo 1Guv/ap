@@ -1,11 +1,32 @@
 #header {
-  height: 150px;
-  background-color: black;
-
+  //height: 150px;
+  background-color: white;
   color: white;
 
   .nav-menu {
-    height: 25px;
-    background-color: lightgrey;
+
+    background: whitesmoke;
+
+    nav button {
+      margin: 5px 10px;
+    }
   }
+
+  h1 {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+
+    span {
+      font-weight: normal;
+      background-color: yellow;
+    }
+  }
+
+  mat-icon {
+    color: black;
+  }
+
+
 }

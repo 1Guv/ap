@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(~normalize.css);
+@import url(~bootstrap/dist/css/bootstrap.css);
+@import url(~@angular/material/prebuilt-themes/indigo-pink.css);
+html,
+body {
+  font-family: Oswald, 'sans-serif';
+  background-color: #efefef;
+  margin: 0 0; }
+
+button {
+  outline: none !important; }
+
+/*# sourceMappingURL=styles.css.map */
