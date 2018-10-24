@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  isMobileResolution: boolean;
+  // isTabletResolution: boolean;
+
+  constructor() {
+    if (window.innerWidth < 768) {
+      this.isMobileResolution = true;
+    } else {
+      this.isMobileResolution = false;
+    }
+  }
 
   ngOnInit() {
+    this.getIsMobileResolution();
+  }
+
+  public getIsMobileResolution(): boolean {
+    return this.isMobileResolution;
   }
 
 }

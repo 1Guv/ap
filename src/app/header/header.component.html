@@ -23,10 +23,21 @@
         <mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>
       </button>
 
+      <button
+        *ngIf="isMobileResolution"
+        mat-icon-button
+        [matMenuTriggerFor]="more">
+        <mat-icon class="arrow-drop-down" matSuffix>more_vert</mat-icon>
+      </button>
+
+
       <mat-menu #more="matMenu">
+        <button mat-menu-item>HOME</button>
         <button mat-menu-item>SEARCH</button>
         <button mat-menu-item>GET A VALUATION</button>
         <button mat-menu-item>PLATE DESIGNER</button>
+        <button mat-menu-item>HOW IT WORKS</button>
+        <button mat-menu-item>PRICE</button>
         <button mat-menu-item>ABOUT</button>
         <button mat-menu-item>CONTACT</button>
       </mat-menu>
