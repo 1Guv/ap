@@ -1,15 +1,11 @@
 #header {
-  //height: 150px;
+  position: relative;
   background-color: white;
   color: white;
 
   .nav-menu {
 
     background: whitesmoke;
-
-    nav button {
-      margin: 5px 10px;
-    }
   }
 
   h1 {
@@ -28,5 +24,35 @@
     color: black;
   }
 
+  button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
+  mat-icon.home {
+    margin-right: 20px;
+    font-size: 40px;
+    position: relative;
+    top: 18px;
+  }
+
+  mat-icon.arrow-drop-down {
+    position: relative;
+    top: -2px;
+  }
+}
+
+#header-sub-menu {
+  //height: 50px;
+  background-color: yellow;
+  //background-color: #ea1821;
+  //background-color: #cccccc;
+
+}
+
+// Mobile phone screen
+@media (max-width: 570px) {
+  #header {
+    padding-bottom: 15px;
+  }
 }

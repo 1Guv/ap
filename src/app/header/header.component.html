@@ -1,6 +1,6 @@
-<div id="header" class="container mat-elevation-z5">
-  <div class="row d-flex flex-row justify-content-start align-items-center">
-    <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pl-1">
+<div id="header" class="container-fluid mat-elevation-z5">
+  <div class="row d-flex flex-row justify-content-center align-items-center">
+    <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">
 
     <div class="m-0">
       <h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>
@@ -11,28 +11,34 @@
       </mat-form-field>
     </div>
 
+    <div class="pl-lg-5 pb-sm-3">
+      <mat-icon class="home" matSuffix>home</mat-icon>
+      <button mat-raised-button>HOW IT WORKS</button>
+      <button mat-raised-button>PRICE</button>
+
+      <button
+        mat-raised-button
+        [matMenuTriggerFor]="more">
+        MORE
+        <mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>
+      </button>
+
+      <mat-menu #more="matMenu">
+        <button mat-menu-item>SEARCH</button>
+        <button mat-menu-item>GET A VALUATION</button>
+        <button mat-menu-item>PLATE DESIGNER</button>
+        <button mat-menu-item>ABOUT</button>
+        <button mat-menu-item>CONTACT</button>
+      </mat-menu>
+    </div>
+
   </div>
 </div>
 
-
-<!--<div id="header" class="container mat-elevation-z5">-->
-  <!--<div class="row d-flex flex-row justify-content-center">-->
-    <!--<img src="./assets/logo_2.jpg" alt="APNAPLATES">-->
-  <!--</div>-->
-
-  <!--<h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>-->
-
-  <!--<div class="nav-menu border">-->
-    <!--<nav class="d-flex flex-row justify-content-center align-content-around">-->
-      <!--<button mat-raised-button>HOME</button>-->
-      <!--<button mat-raised-button>HOW IT WORKS</button>-->
-      <!--<button mat-raised-button>PRICE</button>-->
-      <!--<button mat-raised-button>SEARCH</button>-->
-      <!--<button mat-raised-button>GET A VALUATION</button>-->
-      <!--<button mat-raised-button>PLATE DESIGNER</button>-->
-      <!--<button mat-raised-button>ABOUT</button>-->
-      <!--<button mat-raised-button>CONTACT</button>-->
-      <!--<button mat-raised-button>LOGIN</button>-->
-    <!--</nav>-->
-  <!--</div>-->
-<!--</div>-->
+<div id="header-sub-menu" class="container-fluid">
+  <div class="row">
+    <div class="text-center m-auto p-1">
+      <h3>Advertise your Private ASIAN Number Plate here...</h3>
+    </div>
+  </div>
+</div>
