@@ -1,4 +1,4 @@
-<div id="header" class="container-fluid mat-elevation-z5">
+<div id="header" class="container-fluid mat-elevation-z5" (window:resize)="onResize($event)">
   <div class="row d-flex flex-row justify-content-center align-items-center">
     <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">
 
@@ -17,6 +17,7 @@
       <button mat-raised-button>PRICE</button>
 
       <button
+        *ngIf="isMobileResolution == false"
         mat-raised-button
         [matMenuTriggerFor]="more">
         MORE
@@ -24,12 +25,11 @@
       </button>
 
       <button
-        *ngIf="isMobileResolution"
+        *ngIf="isMobileResolution == true"
         mat-icon-button
         [matMenuTriggerFor]="more">
         <mat-icon class="arrow-drop-down" matSuffix>more_vert</mat-icon>
       </button>
-
 
       <mat-menu #more="matMenu">
         <button mat-menu-item>HOME</button>
