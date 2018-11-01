@@ -15,36 +15,19 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.getCurrentResolution();
-    this.getIsMobileResolution();
   }
 
+  // Gets the current screen size and sets the menu to mobile or normal on first load
   public getCurrentResolution() {
     this.innerWidth = window.innerWidth;
-    console.log('current res', this.innerWidth);
-
-    if (this.innerWidth <= 768) {
-      this.isMobileResolution = true;
-    } else {
-      this.isMobileResolution = false;
-    }
+    this.innerWidth <= 768 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 
-  public getIsMobileResolution(): boolean {
-    return this.isMobileResolution;
-  }
-
+  // Listens to the window resize event to change menu to reponsive if the screen is resized
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     const pixelResolution = event.target.innerWidth;
-    console.log('Event', pixelResolution);
-
-    if (pixelResolution <= 768) {
-      this.isMobileResolution = true;
-    } else {
-      this.isMobileResolution = false;
-    }
-
-    console.log(this.isMobileResolution);
+    pixelResolution <= 768 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 
 }
