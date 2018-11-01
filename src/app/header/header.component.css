@@ -1,35 +1,8 @@
 #header {
   position: relative;
-  background-color: white; }
-  #header .nav-menu {
-    background: whitesmoke; }
-  #header h1 {
-    font-size: 1em;
-    color: black;
-    text-align: center;
-    margin-top: 15px; }
-    #header h1 span {
-      font-weight: normal;
-      background-color: yellow; }
-  #header mat-icon {
-    color: black; }
-  #header button {
-    margin-left: 5px;
-    margin-right: 5px; }
-  #header mat-icon.home {
-    margin-right: 20px;
-    font-size: 40px;
-    position: relative;
-    top: 18px; }
-  #header mat-icon.arrow-drop-down {
-    position: relative;
-    top: -2px; }
+  background: white; }
 
 #header-sub-menu {
   background-color: yellow; }
-
-@media (max-width: 570px) {
-  #header {
-    padding-bottom: 15px; } }
 
 /*# sourceMappingURL=header.component.css.map */

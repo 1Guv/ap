@@ -7,7 +7,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isMobileResolution: boolean;
+  isMobileResolution = false;
   // isTabletResolution: boolean;
 
   constructor() {}

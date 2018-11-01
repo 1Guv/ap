@@ -1,58 +1,70 @@
 #header {
   position: relative;
-  background-color: white;
-  //color: white;
-
-  .nav-menu {
-
-    background: whitesmoke;
-  }
-
-  h1 {
-    font-size: 1em;
-    color: black;
-    text-align: center;
-    margin-top: 15px;
-
-    span {
-      font-weight: normal;
-      background-color: yellow;
-    }
-  }
-
-  mat-icon {
-    color: black;
-  }
-
-  button {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  mat-icon.home {
-    margin-right: 20px;
-    font-size: 40px;
-    position: relative;
-    top: 18px;
-  }
-
-  mat-icon.arrow-drop-down {
-    position: relative;
-    top: -2px;
-  }
+  background: white;
 }
 
 #header-sub-menu {
-  //height: 50px;
   background-color: yellow;
+  //background-color: #ec2058;
   //background-color: #ea1821;
   //background-color: #cccccc;
-
 }
 
-// Mobile phone screen
-@media (max-width: 570px) {
-  #header {
-    padding-bottom: 15px;
-  }
-}
+
+
+///*
+//#header {
+//  position: relative;
+//  background: white;
+//  padding-bottom: 10px;
+//
+//  .header-search-div {
+//    width: 500px;
+//  }
+//
+//  h1 {
+//    font-size: 1em;
+//    color: black;
+//    text-align: center;
+//    margin-top: 15px;
+//
+//    span {
+//      font-weight: normal;
+//      background-color: yellow;
+//    }
+//  }
+//
+//  button {
+//    margin-left: 5px;
+//    margin-right: 5px;
+//  }
+//
+//  mat-icon.arrow-drop-down {
+//    position: relative;
+//    top: -2px;
+//  }
+//
+//}
+//
+//#header-sub-menu {
+//  background-color: yellow;
+//  //background-color: #ec2058;
+//  //background-color: #ea1821;
+//  //background-color: #cccccc;
+//
+//}
+//
+//// Mobile phone screen
+//@media (max-width: 570px) {
+//
+//  #header {
+//    .header-search-div mat-hint {
+//      font-size: 9px;
+//    }
+//  }
+//
+//  #header-sub-menu h3 {
+//    font-size: 20px;
+//  }
+//}
+//*/

@@ -8,12 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { MatIconModule } from '@angular/material';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

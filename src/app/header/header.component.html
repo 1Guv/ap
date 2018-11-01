@@ -1,50 +1,76 @@
 <div id="header" class="container-fluid mat-elevation-z5" (window:resize)="onResize($event)">
-  <div class="row d-flex flex-row justify-content-center align-items-center">
-    <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">
+  <div class="row d-flex flex-row align-items-center border">
 
-    <div class="m-0">
-      <h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>
-      <mat-form-field appearance="fill" class="w-100">
-        <mat-label>Enter your name, initials, anything...</mat-label>
-        <input matInput placeholder="Search">
-        <mat-icon matSuffix>search</mat-icon>
-      </mat-form-field>
+    <div class="col-3 border">
+      <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="border">
     </div>
 
-    <div class="pl-lg-5 pb-sm-3">
-      <mat-icon class="home" matSuffix>home</mat-icon>
-      <button mat-raised-button>HOW IT WORKS</button>
-      <button mat-raised-button>PRICE</button>
-
-      <button
-        *ngIf="isMobileResolution == false"
-        mat-raised-button
-        [matMenuTriggerFor]="more">
-        MORE
-        <mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>
-      </button>
-
-      <button
-        *ngIf="isMobileResolution == true"
-        mat-icon-button
-        [matMenuTriggerFor]="more">
-        <mat-icon class="arrow-drop-down" matSuffix>more_vert</mat-icon>
-      </button>
-
-      <mat-menu #more="matMenu">
-        <button mat-menu-item>HOME</button>
-        <button mat-menu-item>SEARCH</button>
-        <button mat-menu-item>GET A VALUATION</button>
-        <button mat-menu-item>PLATE DESIGNER</button>
-        <button mat-menu-item>HOW IT WORKS</button>
-        <button mat-menu-item>PRICE</button>
-        <button mat-menu-item>ABOUT</button>
-        <button mat-menu-item>CONTACT</button>
-      </mat-menu>
+    <div class="d-flex justify-content-end col-9 border">
+      <a class="m-2">List Your Plate</a>
+      <a class="m-2">How It Works</a>
+      <a class="m-2">Get a Valuation</a>
+      <a class="m-2">Price</a>
+      <a class="m-2">About</a>
+      <a class="m-2">Contact</a>
+      <a class="m-2">Login</a>
     </div>
-
   </div>
+
 </div>
+
+
+<!--<div id="header" class="container-fluid mat-elevation-z5" (window:resize)="onResize($event)">-->
+  <!--<div class="row d-flex flex-row justify-content-center align-items-center">-->
+    <!--<img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">-->
+
+    <!--<div class="m-0 header-search-div">-->
+      <!--<h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>-->
+      <!--<mat-form-field appearance="fill" class="w-100 pb-1" hintLabel="">-->
+        <!--<mat-label>Search for your perfect number plate ...</mat-label>-->
+        <!--<input matInput placeholder="Search">-->
+        <!--<mat-hint align="start">Enter your name, initials, Singh, Mohammed, Jag, Khan, Faisal or anything</mat-hint>-->
+        <!--<mat-icon matSuffix>search</mat-icon>-->
+      <!--</mat-form-field>-->
+    <!--</div>-->
+
+    <!--<div class="pl-lg-5 pb-sm-3">-->
+      <!--<button mat-mini-fab>-->
+        <!--<mat-icon>home</mat-icon>-->
+      <!--</button>-->
+
+      <!--&lt;!&ndash;<mat-icon class="home" matSuffix>home</mat-icon>&ndash;&gt;-->
+      <!--<button mat-raised-button>HOW IT WORKS</button>-->
+      <!--<button mat-raised-button>PRICE</button>-->
+
+      <!--<button-->
+        <!--*ngIf="isMobileResolution == false"-->
+        <!--mat-raised-button-->
+        <!--[matMenuTriggerFor]="more">-->
+        <!--MORE-->
+        <!--<mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>-->
+      <!--</button>-->
+
+      <!--<button-->
+        <!--*ngIf="isMobileResolution == true"-->
+        <!--mat-icon-button-->
+        <!--[matMenuTriggerFor]="more">-->
+        <!--<mat-icon class="arrow-drop-down" matSuffix>menu</mat-icon>-->
+      <!--</button>-->
+
+      <!--<mat-menu #more="matMenu">-->
+        <!--<button mat-menu-item>HOME</button>-->
+        <!--<button mat-menu-item>SEARCH</button>-->
+        <!--<button mat-menu-item>GET A VALUATION</button>-->
+        <!--<button mat-menu-item>PLATE DESIGNER</button>-->
+        <!--<button mat-menu-item>HOW IT WORKS</button>-->
+        <!--<button mat-menu-item>PRICE</button>-->
+        <!--<button mat-menu-item>ABOUT</button>-->
+        <!--<button mat-menu-item>CONTACT</button>-->
+      <!--</mat-menu>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->
 
 <div id="header-sub-menu" class="container-fluid">
   <div class="row">
