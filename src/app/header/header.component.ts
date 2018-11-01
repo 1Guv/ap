@@ -7,13 +7,26 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isMobileResolution = false;
+  public innerWidth: any;
+  isMobileResolution: boolean;
   // isTabletResolution: boolean;
 
   constructor() {}
 
   ngOnInit() {
+    this.getCurrentResolution();
     this.getIsMobileResolution();
+  }
+
+  public getCurrentResolution() {
+    this.innerWidth = window.innerWidth;
+    console.log('current res', this.innerWidth);
+
+    if (this.innerWidth <= 768) {
+      this.isMobileResolution = true;
+    } else {
+      this.isMobileResolution = false;
+    }
   }
 
   public getIsMobileResolution(): boolean {
@@ -22,10 +35,10 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    event.target.innerWidth;
-    console.log('Event', event.target.innerWidth);
+    const pixelResolution = event.target.innerWidth;
+    console.log('Event', pixelResolution);
 
-    if (event.target.innerWidth <= 768) {
+    if (pixelResolution <= 768) {
       this.isMobileResolution = true;
     } else {
       this.isMobileResolution = false;
