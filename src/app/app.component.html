@@ -1,2 +1,10 @@
-<app-header></app-header>
-<app-main></app-main>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav 
+                 mode="slide">
+        sidenav Content
+    </mat-sidenav>
+    <mat-sidenav-content>
+            <app-header></app-header>
+            <app-main></app-main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

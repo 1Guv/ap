@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { MatIconModule } from '@angular/material';
 import { MainComponent } from './main/main.component';
+import { MatSidenavModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MainComponent } from './main/main.component';
     BrowserAnimationsModule,
     AppMaterialModule,
     MatIconModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

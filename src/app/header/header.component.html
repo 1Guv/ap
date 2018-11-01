@@ -1,23 +1,23 @@
 <div id="header" class="container-fluid mat-elevation-z5" (window:resize)="onResize($event)">
-  <div class="row d-flex flex-row align-items-center border">
+  <div class="row d-flex flex-row align-items-center">
 
-    <div class="col-3 border">
-      <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="border">
+    <div class="col-3">
+      <img src="./assets/small-logo.jpg" alt="APNAPLATES" class="">
     </div>
 
-    <div class="d-flex justify-content-end col-9 border">
+    <div class="d-flex justify-content-end col-9">
       <div *ngIf="isMobileResolution == false"> 
-          <a class="m-2">List Your Plate</a>
-          <a class="m-2">How It Works</a>
-          <a class="m-2">Get a Valuation</a>
-          <a class="m-2">Price</a>
-          <a class="m-2">About</a>
-          <a class="m-2">Contact</a>
-          <a class="m-2">Login</a>
+          <a class="">List Your Plate</a>
+          <a class="">How It Works</a>
+          <a class="">Get a Valuation</a>
+          <a class="">Price</a>
+          <a class="">About</a>
+          <a class="">Contact</a>
+          <a class="">Login</a>
       </div>
 
       <div *ngIf="isMobileResolution == true">
-        <button mat-icon-button>
+        <button mat-icon-button (click)="toggleSidenav()">
             <mat-icon matSuffix>menu</mat-icon>
         </button>
       </div>

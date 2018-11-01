@@ -1,13 +1,26 @@
 #header {
   position: relative;
   background: white;
+
+  a {
+    padding: 10px;
+  }
+
+  a:hover {
+    background-color: lightgray;
+    color: white;
+    cursor: pointer;
+    background-color: #ec2058;
+  }
 }
 
 #header-sub-menu {
   background-color: yellow;
-  //background-color: #ec2058;
-  //background-color: #ea1821;
-  //background-color: #cccccc;
+
+  // hot pink
+  // background-color: #ec2058;
+  // background-color: #ea1821;
+  // background-color: #cccccc;
 }
 
 
