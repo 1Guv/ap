@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,5 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'APNAPLATES 2019';
 
-  @ViewChild('sidenav') sidenav: any;
-
-  ngOnInit() {
-    console.log('sidenav', this.sidenav);
-  }
+  ngOnInit() {}
 }

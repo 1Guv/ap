@@ -1,6 +1,4 @@
-import {Component, HostListener, OnInit, ViewChildren, Output} from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
-import { EventEmitter } from 'events';
+import {Component, HostListener, OnInit, ViewChildren, Output, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +7,9 @@ import { EventEmitter } from 'events';
 })
 export class HeaderComponent implements OnInit {
 
-  // @ViewChildren('sidenav') sidenav: MatSidenav;
+  // Getting sidenav element from parent so we can use sidenav.toggle()
+  @Input() sidenav: any;
+
   public innerWidth: any;
   isMobileResolution: boolean;
   // isTabletResolution: boolean;
@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.getCurrentResolution();
-    // console.log('sidenav', this.sidenav);
   }
 
   // Gets the current screen size and sets the menu to mobile or normal on first load
@@ -33,10 +32,4 @@ export class HeaderComponent implements OnInit {
     const pixelResolution = event.target.innerWidth;
     pixelResolution <= 768 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
-
-  // public toggleSidenav() {
-  //   console.log('yo');
-  //   console.log(this.sidenav);
-  //   this.sidenav.toggle();
-  // }
 }
