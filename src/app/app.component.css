@@ -8,6 +8,12 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-    /* background-color: #ec2058; */
+    background-color: #fafafa;
     width: 75vw;
+}
+
+.sidenav-header {
+    height: 102px;
+    background-color: #ec2058;
+    width: 100%;
 }
