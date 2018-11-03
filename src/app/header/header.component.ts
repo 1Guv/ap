@@ -23,13 +23,13 @@ export class HeaderComponent implements OnInit {
   // Gets the current screen size and sets the menu to mobile or normal on first load
   public getCurrentResolution() {
     this.innerWidth = window.innerWidth;
-    this.innerWidth <= 768 ? this.isMobileResolution = true : this.isMobileResolution = false;
+    this.innerWidth <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 
   // Listens to the window resize event to change menu to reponsive if the screen is resized
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     const pixelResolution = event.target.innerWidth;
-    pixelResolution <= 768 ? this.isMobileResolution = true : this.isMobileResolution = false;
+    pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 }
