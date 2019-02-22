@@ -6,19 +6,19 @@
     </div>
 
     <div class="d-flex justify-content-end col-9">
-      <div *ngIf="isMobileResolution == false"> 
-          <a class="">List Your Plate</a>
-          <a class="">How It Works</a>
-          <a class="">Get a Valuation</a>
-          <a class="">Price</a>
-          <a class="">About</a>
-          <a class="">Contact</a>
-          <a class="">Login</a>
+      <div *ngIf="isMobileResolution == false">
+        <a class="">List Your Plate</a>
+        <a class="">How It Works</a>
+        <a class="">Get a Valuation</a>
+        <a class="">Price</a>
+        <a class="">About</a>
+        <a class="">Contact</a>
+        <a class="">Login</a>
       </div>
 
       <div *ngIf="isMobileResolution == true">
         <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon matSuffix>menu</mat-icon>
+          <mat-icon matSuffix>menu</mat-icon>
         </button>
       </div>
     </div>
@@ -28,61 +28,62 @@
 
 
 <!--<div id="header" class="container-fluid mat-elevation-z5" (window:resize)="onResize($event)">-->
-  <!--<div class="row d-flex flex-row justify-content-center align-items-center">-->
-    <!--<img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">-->
+<!--<div class="row d-flex flex-row justify-content-center align-items-center">-->
+<!--<img src="./assets/small-logo.jpg" alt="APNAPLATES" class="pr-lg-5">-->
 
-    <!--<div class="m-0 header-search-div">-->
-      <!--<h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>-->
-      <!--<mat-form-field appearance="fill" class="w-100 pb-1" hintLabel="">-->
-        <!--<mat-label>Search for your perfect number plate ...</mat-label>-->
-        <!--<input matInput placeholder="Search">-->
-        <!--<mat-hint align="start">Enter your name, initials, Singh, Mohammed, Jag, Khan, Faisal or anything</mat-hint>-->
-        <!--<mat-icon matSuffix>search</mat-icon>-->
-      <!--</mat-form-field>-->
-    <!--</div>-->
+<!--<div class="m-0 header-search-div">-->
+<!--<h1>#1 for Advertising & Selling "<span>Asian Number Plates</span>" in the UK</h1>-->
+<!--<mat-form-field appearance="fill" class="w-100 pb-1" hintLabel="">-->
+<!--<mat-label>Search for your perfect number plate ...</mat-label>-->
+<!--<input matInput placeholder="Search">-->
+<!--<mat-hint align="start">Enter your name, initials, Singh, Mohammed, Jag, Khan, Faisal or anything</mat-hint>-->
+<!--<mat-icon matSuffix>search</mat-icon>-->
+<!--</mat-form-field>-->
+<!--</div>-->
 
-    <!--<div class="pl-lg-5 pb-sm-3">-->
-      <!--<button mat-mini-fab>-->
-        <!--<mat-icon>home</mat-icon>-->
-      <!--</button>-->
+<!--<div class="pl-lg-5 pb-sm-3">-->
+<!--<button mat-mini-fab>-->
+<!--<mat-icon>home</mat-icon>-->
+<!--</button>-->
 
-      <!--&lt;!&ndash;<mat-icon class="home" matSuffix>home</mat-icon>&ndash;&gt;-->
-      <!--<button mat-raised-button>HOW IT WORKS</button>-->
-      <!--<button mat-raised-button>PRICE</button>-->
+<!--&lt;!&ndash;<mat-icon class="home" matSuffix>home</mat-icon>&ndash;&gt;-->
+<!--<button mat-raised-button>HOW IT WORKS</button>-->
+<!--<button mat-raised-button>PRICE</button>-->
 
-      <!--<button-->
-        <!--*ngIf="isMobileResolution == false"-->
-        <!--mat-raised-button-->
-        <!--[matMenuTriggerFor]="more">-->
-        <!--MORE-->
-        <!--<mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>-->
-      <!--</button>-->
+<!--<button-->
+<!--*ngIf="isMobileResolution == false"-->
+<!--mat-raised-button-->
+<!--[matMenuTriggerFor]="more">-->
+<!--MORE-->
+<!--<mat-icon class="arrow-drop-down" matSuffix>arrow_drop_down</mat-icon>-->
+<!--</button>-->
 
-        <!--*ngIf="isMobileResolution == true"-->
-        <!--mat-icon-button-->
-        <!--[matMenuTriggerFor]="more">-->
-        <!--<mat-icon class="arrow-drop-down" matSuffix>menu</mat-icon>-->
-      <!--</button>-->
+<!--*ngIf="isMobileResolution == true"-->
+<!--mat-icon-button-->
+<!--[matMenuTriggerFor]="more">-->
+<!--<mat-icon class="arrow-drop-down" matSuffix>menu</mat-icon>-->
+<!--</button>-->
 
-      <!--<mat-menu #more="matMenu">-->
-        <!--<button mat-menu-item>HOME</button>-->
-        <!--<button mat-menu-item>SEARCH</button>-->
-        <!--<button mat-menu-item>GET A VALUATION</button>-->
-        <!--<button mat-menu-item>PLATE DESIGNER</button>-->
-        <!--<button mat-menu-item>HOW IT WORKS</button>-->
-        <!--<button mat-menu-item>PRICE</button>-->
-        <!--<button mat-menu-item>ABOUT</button>-->
-        <!--<button mat-menu-item>CONTACT</button>-->
-      <!--</mat-menu>-->
-    <!--</div>-->
+<!--<mat-menu #more="matMenu">-->
+<!--<button mat-menu-item>HOME</button>-->
+<!--<button mat-menu-item>SEARCH</button>-->
+<!--<button mat-menu-item>GET A VALUATION</button>-->
+<!--<button mat-menu-item>PLATE DESIGNER</button>-->
+<!--<button mat-menu-item>HOW IT WORKS</button>-->
+<!--<button mat-menu-item>PRICE</button>-->
+<!--<button mat-menu-item>ABOUT</button>-->
+<!--<button mat-menu-item>CONTACT</button>-->
+<!--</mat-menu>-->
+<!--</div>-->
 
-  <!--</div>-->
+<!--</div>-->
 <!--</div>-->
 
 <div id="header-sub-menu" class="container-fluid">
   <div class="row">
     <div class="text-center m-auto p-1">
-      <h3>Advertise your Private ASIAN Number Plate here...</h3>
+      <!-- <h3>Advertise your Private ASIAN Number Plate here...</h3> -->
+      <h3>{{ headerBannerMessage }}</h3>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import {Component, HostListener, OnInit, ViewChildren, Output, Input} from '@angular/core';
+import { Component, HostListener, OnInit, ViewChildren, Output, Input } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -14,10 +15,26 @@ export class HeaderComponent implements OnInit {
   isMobileResolution: boolean;
   // isTabletResolution: boolean;
 
-  constructor() {}
+  headerBannerMessage: string = 'Advertise your Private ASIAN Number Plate here...';
+
+  subscription: Subscription;
+  intervalId: number;
+  counter: number = 1;
+
+  constructor() { }
 
   ngOnInit() {
     this.getCurrentResolution();
+
+    const source = interval(5000);
+    const text = [
+      'Advertise your Private ASIAN Number Plate here...',
+      'FREE Standard Listings - UPGRADE at any time',
+      'We charge a ONE-OFF-FEE for a Premuim Listing',
+      'We never ever take a commission - so you can keep all the profits',
+      'We advertise your number plate until SOLD'
+    ];
+    this.subscription = source.subscribe(val => this.displayBannerHeaderText(text, this.counter));
   }
 
   // Gets the current screen size and sets the menu to mobile or normal on first load
@@ -31,5 +48,18 @@ export class HeaderComponent implements OnInit {
   onResize(event) {
     const pixelResolution = event.target.innerWidth;
     pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
+  }
+
+  displayBannerHeaderText(text, counter) {
+    if (this.counter == text.length) {
+      this.counter = 0;
+    }
+    console.log('displaybannerHeaderText');
+    this.counter++;
+    this.headerBannerMessage = text[counter];
+  }
+
+  ngOnDestroy() {
+    this.subscription && this.subscription.unsubscribe();
   }
 }
