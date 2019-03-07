@@ -15,11 +15,12 @@ export class HeaderComponent implements OnInit {
   isMobileResolution: boolean;
   // isTabletResolution: boolean;
 
+  // Initial banner message
   headerBannerMessage = 'Advertise your Private ASIAN Number Plate here...';
 
   subscription: Subscription;
   intervalId: number;
-  counter = 1;
+  counter = 0;
 
   constructor() { }
 
@@ -50,17 +51,13 @@ export class HeaderComponent implements OnInit {
     pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 
-  displayBannerHeaderText(text: string, counter) {
-    if (this.counter === text.length) {
+  displayBannerHeaderText(text: string[], counter: number) {
+    if (this.counter < text.length) {
+      // console.log('text', text[this.counter]);
+      this.counter++;
+      this.headerBannerMessage = text[counter];
+    } else {
       this.counter = 0;
     }
-    console.log('displaybannerHeaderText');
-    this.counter++;
-    this.headerBannerMessage = text[counter];
-  }
-
-  // tslint:disable-next-line:use-life-cycle-interface
-  ngOnDestroy() {
-    this.subscription && this.subscription.unsubscribe();
   }
 }
