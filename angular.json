@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ap6"
+  "defaultProject": "ap6",
+  "cli": {
+    "analytics": "de118bfd-174b-4d0b-b654-1730aa469cd4"
+  }
 }
