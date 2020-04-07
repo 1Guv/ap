@@ -44,7 +44,7 @@ export class HeaderComponent implements OnInit {
     this.innerWidth <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
   }
 
-  // Listens to the window resize event to change menu to reponsive if the screen is resized
+  // Listens to the window resize event to change menu to responsive if the screen is resized
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     const pixelResolution = event.target.innerWidth;

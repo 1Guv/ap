@@ -10,13 +10,22 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { MatIconModule } from '@angular/material/icon';
 import { MainComponent } from './main/main.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { HttpClientModule } from '@angular/common/http';
+import { ListingsPageOneComponent } from './listings-page-one/listings-page-one.component';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { PlateContainerOneComponent } from './_elements/plate-container-one/plate-container-one.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    ListingsPageOneComponent,
+    PlateContainerOneComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,8 +34,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AppMaterialModule,
     MatIconModule,
     MatSidenavModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase, 'apnaplates'),
+    AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

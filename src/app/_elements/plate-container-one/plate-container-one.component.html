@@ -1,0 +1,26 @@
+<div class="d-flex flex-row justify-content-center align-content-start flex-wrap">
+  <mat-card *ngFor="let plate of arrayOfPlates">
+    <div class="text-center">
+      <!--    <span class="plate">{{ plate.displayedAs }}</span>-->
+      <span class="">
+        <h1 class="m-1">{{ plate.displayedAs }}</h1>
+      </span>
+
+    </div>
+    <hr>
+    <div>
+      <h6>{{ plate.characters }}</h6>
+      <!--      <h6>{{ plate.ethnicityType }}</h6>-->
+      <!--      <h6>{{ plate.dateListed }}</h6>-->
+      <!--      <h6>{{ plate.views }}</h6>-->
+      <!--      <h6>{{ plate.starRating }}</h6>-->
+      <!--      <h6>{{ plate.votes }}</h6>-->
+    </div>
+
+  </mat-card>
+
+  <!--  Pushes last item to left-->
+  <i aria-hidden="true"></i>
+  <i aria-hidden="true"></i>
+
+</div>

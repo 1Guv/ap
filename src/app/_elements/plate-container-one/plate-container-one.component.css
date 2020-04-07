@@ -1,0 +1,64 @@
+mat-card {
+  width: 250px;
+  margin: 16px;
+}
+
+.plate{
+  font-size: 10px;
+  align-items: center;
+  background-color: rgb(255,222,0);
+  background-image: linear-gradient(135deg, #ffde00 0%,#edc500 100%);
+  border-radius: 3px;
+  border: rgb(211,188,9) 2px solid;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0, 0.15);
+  display: inline-flex;
+  /*font-family: 'Roboto Mono', monospace;*/
+  font-weight: 800;
+  justify-content: center;
+  position: relative;
+  padding: 4px 15px 5px 15px;
+}
+
+.plate:after{
+  background: linear-gradient(to left, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 10px;
+  opacity: 0.65;
+  position: absolute;
+  right: 0;
+}
+
+.plate:before{
+  background: linear-gradient(to top, rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%);
+  bottom: 0;
+  content: '';
+  opacity: 0.65;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 2px;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+i {
+  width: 250px;
+  margin: 16px;
+}

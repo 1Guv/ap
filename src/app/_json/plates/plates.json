@@ -1,0 +1,67 @@
+{
+  "plates": [
+    {
+      "characters": "16uv",
+      "displayedAs": "1 6UV",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 12345,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "TH15NYA",
+      "displayedAs": "TH15 NYA",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "1 NYA",
+      "displayedAs": "1 NYA",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "654NDU",
+      "displayedAs": "6 54NDU",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "1BOB",
+      "displayedAs": "1 BOB",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "TH15FBI",
+      "displayedAs": "TH15 FBI",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    },
+    {
+      "characters": "G51NGH",
+      "displayedAs": "G 51NGH",
+      "ethnicityType": "Sikh",
+      "dateListed": "10/03/2014",
+      "views": 5678,
+      "starRating": 5,
+      "votes": 3
+    }
+  ]
+}
