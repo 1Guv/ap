@@ -1,3 +1,10 @@
 .logo {
     height: 100px;
 }
+
+.logo-word {
+    margin-top: 50px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}

@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   // isTabletResolution: boolean;
 
   // Initial banner message
-  headerBannerMessage = 'Advertise your Private ASIAN Number Plate here...';
+  headerBannerMessage = 'Advertise your Private Number Plate here...';
 
   subscription: Subscription;
   intervalId: number;
@@ -29,7 +29,9 @@ export class HeaderComponent implements OnInit {
 
     const source = interval(5000);
     const text = [
-      'Advertise your Private ASIAN Number Plate here...',
+      '#1 for Listing Plates for FREE in the UK',
+      'We are the Autotrader for Private Number Plates in the UK',
+      'Advertise your Private Number Plate here...',
       'FREE Standard Listings - UPGRADE at any time',
       'We charge a ONE-OFF-FEE for a Premuim Listing',
       'We never ever take a commission - so you can keep all the profits',
@@ -49,6 +51,7 @@ export class HeaderComponent implements OnInit {
   onResize(event) {
     const pixelResolution = event.target.innerWidth;
     pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
+    console.log('isMobileResolution', this.isMobileResolution);
   }
 
   displayBannerHeaderText(text: string[], counter: number) {
