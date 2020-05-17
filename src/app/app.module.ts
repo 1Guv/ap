@@ -17,6 +17,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { PlateContainerOneComponent } from './_elements/plate-container-one/plate-container-one.component';
+import { LogoComponent } from './_elements/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PlateContainerOneComponent } from './_elements/plate-container-one/plat
     MainComponent,
     ListingsPageOneComponent,
     PlateContainerOneComponent,
+    LogoComponent,
   ],
   imports: [
     BrowserModule,
