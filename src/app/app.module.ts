@@ -19,6 +19,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { PlateContainerOneComponent } from './_elements/plate-container-one/plate-container-one.component';
 import { LogoComponent } from './_elements/logo/logo.component';
 import { AboveHeaderMessageComponent } from './_elements/above-header-message/above-header-message.component';
+import { HeaderMenuComponent } from './_elements/header-menu/header-menu.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AboveHeaderMessageComponent } from './_elements/above-header-message/ab
     PlateContainerOneComponent,
     LogoComponent,
     AboveHeaderMessageComponent,
+    HeaderMenuComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,23 +11,9 @@
     </div>
 
     <div class="d-flex justify-content-end col-2 col-lg-8">
-      <div class="d-none d-lg-block">
-        <a class="">List Your Plate</a>
-        <a class="">How It Works</a>
-        <a class="">Get a Valuation</a>
-        <a class="">Price</a>
-        <a class="">About</a>
-        <a class="">Contact</a>
-        <a class="">Login</a>
-      </div>
-
-      <div class="d-lg-none">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon matSuffix>menu</mat-icon>
-        </button>
-      </div>
-      
+      <app-header-menu [sidenav]="sidenav"></app-header-menu>      
     </div>
+
   </div>
 
 </div>
