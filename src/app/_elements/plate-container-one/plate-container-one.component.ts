@@ -9,7 +9,7 @@ import jsonPlates from '../../_json/plates/plates.json';
 })
 export class PlateContainerOneComponent implements OnInit {
 
-  arrayOfPlates: PlatesClass = jsonPlates.plates;
+  arrayOfPlates: PlatesClass[] = jsonPlates.plates;
 
   constructor() { }
 
