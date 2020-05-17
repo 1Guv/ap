@@ -1,11 +1,9 @@
 <div class="d-none d-lg-block">
-    <a class="">List Your Plate</a>
-    <a class="">How It Works</a>
-    <a class="">Get a Valuation</a>
-    <a class="">Price</a>
-    <a class="">About</a>
-    <a class="">Contact</a>
-    <a class="">Login</a>
+    <div class="d-flex flex-row">
+        <span *ngFor="let menu of arrayOfMenuOptions">
+            <a>{{ menu.optionName }}</a>
+        </span>
+    </div>
 </div>
 
 <div class="d-lg-none">
