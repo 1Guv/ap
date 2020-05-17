@@ -51,7 +51,7 @@ export class HeaderComponent implements OnInit {
   onResize(event) {
     const pixelResolution = event.target.innerWidth;
     pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
-    console.log('isMobileResolution', this.isMobileResolution);
+    // console.log('isMobileResolution', this.isMobileResolution);
   }
 
   displayBannerHeaderText(text: string[], counter: number) {
