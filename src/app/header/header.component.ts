@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, ViewChildren, Output, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 
 @Component({
@@ -11,21 +11,15 @@ export class HeaderComponent implements OnInit {
   // Getting sidenav element from parent so we can use sidenav.toggle()
   @Input() sidenav: any;
 
-  public innerWidth: any;
-  isMobileResolution: boolean;
-  // isTabletResolution: boolean;
-
   // Initial banner message
   headerBannerMessage = 'Advertise your Private Number Plate here...';
 
   subscription: Subscription;
-  intervalId: number;
   counter = 0;
 
   constructor() { }
 
   ngOnInit() {
-    this.getCurrentResolution();
 
     const source = interval(5000);
     const text = [
@@ -38,20 +32,6 @@ export class HeaderComponent implements OnInit {
       'We advertise your number plate until SOLD'
     ];
     this.subscription = source.subscribe(val => this.displayBannerHeaderText(text, this.counter));
-  }
-
-  // Gets the current screen size and sets the menu to mobile or normal on first load
-  public getCurrentResolution() {
-    this.innerWidth = window.innerWidth;
-    this.innerWidth <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
-  }
-
-  // Listens to the window resize event to change menu to responsive if the screen is resized
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    const pixelResolution = event.target.innerWidth;
-    pixelResolution <= 810 ? this.isMobileResolution = true : this.isMobileResolution = false;
-    // console.log('isMobileResolution', this.isMobileResolution);
   }
 
   displayBannerHeaderText(text: string[], counter: number) {
