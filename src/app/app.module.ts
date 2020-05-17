@@ -18,6 +18,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { PlateContainerOneComponent } from './_elements/plate-container-one/plate-container-one.component';
 import { LogoComponent } from './_elements/logo/logo.component';
+import { AboveHeaderMessageComponent } from './_elements/above-header-message/above-header-message.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LogoComponent } from './_elements/logo/logo.component';
     ListingsPageOneComponent,
     PlateContainerOneComponent,
     LogoComponent,
+    AboveHeaderMessageComponent,
   ],
   imports: [
     BrowserModule,
