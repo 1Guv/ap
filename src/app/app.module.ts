@@ -20,6 +20,7 @@ import { PlateContainerOneComponent } from './_elements/plate-container-one/plat
 import { LogoComponent } from './_elements/logo/logo.component';
 import { AboveHeaderMessageComponent } from './_elements/above-header-message/above-header-message.component';
 import { HeaderMenuComponent } from './_elements/header-menu/header-menu.component';
+import { SubHeaderComponent } from './_elements/sub-header/sub-header.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HeaderMenuComponent } from './_elements/header-menu/header-menu.compone
     LogoComponent,
     AboveHeaderMessageComponent,
     HeaderMenuComponent,
+    SubHeaderComponent,
   ],
   imports: [
     BrowserModule,
